@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SurPass Stack and other usefull tech</title>
+
+		<link rel="stylesheet" href="reveal/dist/reset.css">
+		<link rel="stylesheet" href="reveal/dist/reveal.css">
+		<link rel="stylesheet" href="reveal/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="reveal/plugin/highlight/monokai.css">
+	</head>
+	<body>
+
+
+
+
+
+
+
+
+
+
+
+ <div class="reveal">
+    <div class="slides">
+
+
+      <div id="marcas-de-agua">
+					<div id="marcadeagua-mongo">
+						<img src="./assets/imgs/PanCareSurPass.png" 
+						style="width: 70px; position: absolute; top: 85%; left: 9%;"  alt="logo fhir"></div>
+					<div id="marcadeagua-lafe"><img src="./assets/imgs/hospital-la-fe.png" 
+						style="width: 100px; position: absolute; top: 85%; left: 0%;"  alt="logo lafe"></div>
+				</div>
+
+      <!-- Título: Apuntes -->
+      <section>
+        <h2>SurPass Stack and other usefull tech</h2>
+        <div style="font-size: 0.8em;">
+          <p>In this presentation series, we aim to present technologies used in SurPass project and other usefull FHIR tech.</p>
+        </div>
+        <img src="./assets/imgs/malabaresduke.png" alt="FHIR logo" style="width: 25%;">
+      </section>
+
+     <!-- Diapositivas Verticales: Información del navegador -->
+      <section>
+        <!-- Diapositiva Padre -->
+       
+
+
+        <!-- Diapositivas Hijas (Verticales) -->
+
+<section>
+  <h3>Overview</h3>
+  <div style="font-size: 0.8em;">
+    <p>We will cover:</p>
+  </div>
+
+  <div style="font-size: 0.8em;">
+    <ul>
+      <li class="fragment">
+        SurPass tech stack
+      </li>
+      <li class="fragment">
+        Miscellaneous tools
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </section>
+
+ 
+  </section>
+      
+
+      </section>
+<!-- Vertical Slides: Tomcat Information -->
+<section>
+    <section>
+        <h2>SurPass Tech Stack</h2>
+        <p>Two main parts:</p>
+        <div style="font-size: 0.8em;">
+            <ol>
+                <li>
+                    <a href="#frontend">Frontend</a>
+                </li>
+                <li>
+                    <a href="#backend">Backend</a>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+ <section id="frontend">
+                <h3>Frontend Stack</h3>
+                <div style="font-size: 0.9em;">
+		<img src="./assets/imgs/duke_frontend.png" style="float: right; width: 25%;" />
+                    <p class="">
+                        <span style="font-weight: bold;">Markup & Styling:</span>
+                    </p>
+                    <p class="">
+                        HTML5: Structure and content.
+                    </p>
+                    <p class="">
+                        CSS3: Design and presentation.
+                    </p>
+                    <br>
+                    <p class="">
+                        <span style="font-weight: bold;">Frontend Library/Framework:</span>
+                    </p>
+                    <p class="">
+                        Lit: For building reusable and dynamic web components.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Frontend Stack</h3>
+                <div style="font-size: 0.9em;">
+		<img src="./assets/imgs/Plug_npm_nodejs.png" style="float: right; width: 25%;" />
+                    <p class="">
+                        <span style="font-weight: bold;">Frontend Programming Language:</span>
+                    </p>
+                    <p class="">
+                        JavaScript ES5: For frontend logic within Lit.
+                    </p>
+                    <br>
+                    <p class="">
+                        <span style="font-weight: bold;">Development/Build Tool:</span>
+                    </p>
+                    <p class="">
+                        Node.js: Used for frontend build processes (compilation, bundling, etc.).
+                    </p>
+                </div>
+            </section>
+<section id="lit">
+    <h3>Frontend Important Packages</h3>
+    <div style="font-size: 0.8em;">
+        <p style="float: left;">
+        <a href="https://lit.dev" target="_blank">
+        Lit 
+		<img src="./assets/imgs/logo-lig.png" style="width: 10%; float: left;" />
+        </a>
+        </p>
+
+        <ul>
+      <li>
+        Reusable web component construction
+      </li>
+      <li>
+        Small and quick library
+      </li>
+      <li>
+        Easy to learn
+      </li>
+      <li>
+        Easy to work with AI assistant coders
+      </li>
+      <li>
+        Maintained by google
+      </li>
+        </ul>
+		<img src="./assets/imgs/duke_packages_js.png" style="float: right; width: 35%;" />
+    </div>
+</section>
+<section id="jspdf">
+    <h3>Frontend Important Packages</h3>
+    <div style="font-size: 0.8em;">
+        <p class="" style="float: left;">
+        <a href="https://github.com/parallax/jsPDF?tab=readme-ov-file" target="_blank">
+            JSPdf
+		<img src="./assets/imgs/jspdf.svg" style="width: 20%; float: left;" />
+        </a>
+        </p>
+
+        <ul>
+      <li class="">
+        Robust Pdf library for the web
+      </li>
+      <li class="">
+        Small and quick loading documents
+      </li>
+      <li class="">
+        Easy to learn
+      </li>
+      <li class="">
+        Easy to work with AI assistant coders
+      </li>
+        </ul>
+		<img src="./assets/imgs/duke_packages_js.png" style="float: right; width: 35%;" />
+    </div>
+</section>
+<section id="codemirror">
+    <h3>Frontend Important Packages</h3>
+    <div style="font-size: 0.8em;">
+        <p class="" style="float: left;">
+        <a href="https://codemirror.net/" target="_blank">
+            Codemirror
+		<img src="./assets/imgs/codemirror_logo_icon.webp" style="width: 10%; float: left;" />
+        </a>
+        </p>
+
+        <ul >
+      <li class="">
+        Embed code editor inside your web UI
+      </li>
+      <li class="">
+        Use plugins to extend functionalities
+      </li>
+      <li class="">
+        Easy to learn
+      </li>
+      <li class="">
+        Easy to work with AI assistant coders
+      </li>
+        </ul>
+		<img src="./assets/imgs/duke_packages_js.png" style="float: right; width: 35%;" />
+    </div>
+</section>
+
+ <section id="backend">
+                <h3>Backend Stack</h3>
+                <div style="font-size: 0.9em;">
+		<img src="./assets/imgs/duke-java.png" style="float: right; width: 25%;" />
+                    <p class="">
+                        <span style="font-weight: bold;">Programming Language:</span>
+                    </p>
+                    <p class="">
+                        Java: The primary language for backend development.
+                    </p>
+                    <br>
+                    <p class="">
+                        <span style="font-weight: bold;">RESTful API Framework:</span>
+                    </p>
+                    <p class="">
+                        Jersey: An implementation of JAX-RS for building RESTful web services in Java.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Backend Stack</h3>
+                <div style="font-size: 0.9em;">
+		<img src="./assets/imgs/tomcat_duke2.png" style="float: right; width: 35%;" />
+                    <p class="">
+                        <span style="font-weight: bold;">Apache Tomcat</span>
+                    </p>
+                    <p class="">
+                        Apache Tomcat: Robust server to deploy web apps
+                    </p>
+                    <br>
+                    <p class="">
+                        <span style="font-weight: bold;">Database:</span>
+                    </p>
+                    <p class="">
+                        Informix: The existing Mizar EHR database.
+                    </p>
+                </div>
+            </section>
+<section id="Jersey">
+    <h3>Backend Important Libraries</h3>
+    <div style="font-size: 0.8em;">
+        <p class="" style="float: left;">
+        <a href="https://eclipse-ee4j.github.io/jersey/" target="_blank">
+            Jersey
+		<img src="./assets/imgs/Glassfish_Jersey.png" style="width: 15%; float: left;" />
+        </a>
+        </p>
+
+        <ul >
+      <li class="">
+        Easy to build REST APIs
+      </li>
+      <li class="">
+        Could be tested with JUnit and Karate-API
+      </li>
+      <li class="">
+        Easy to learn basics 
+      </li>
+      <li class="">
+        Easy to work with AI assistant coders
+      </li>
+        </ul>
+		<img src="./assets/imgs/Duke_libs.png" style="float: right; width: 15%;" />
+    </div>
+</section>
+<section id="jackson">
+    <h3>Backend Important Libraries</h3>
+    <div style="font-size: 0.8em;">
+        <p class="" style="float: left;">
+        <a href="https://github.com/FasterXML/jackson" target="_blank">
+            Jackson
+		<img src="./assets/imgs/jackson.png" style="width: 15%; float: left;" />
+        </a>
+        </p>
+
+        <ul >
+      <li class="">
+        Usefull to work with JSON
+      </li>
+      <li class="">
+        Usefull for mapping Java Clases to JSON
+      </li>
+      <li class="">
+        Usefull for parsing JSON schemas
+      </li>
+        </ul>
+		<img src="./assets/imgs/Duke_libs.png" style="float: right; width: 15%;" />
+    </div>
+</section>
+<section id="hapi-fhir">
+    <h3>Backend Important Libraries</h3>
+    <div style="font-size: 0.8em;">
+        <p class="" style="float: left;">
+        <a href="https://hapifhir.io/" target="_blank">
+            Hapi FHIR
+		<img src="./assets/imgs/hapi.png" style="width: 15%; float: left;" />
+        </a>
+        </p>
+
+        <ul >
+      <li class="">
+        Usefull to work with FHIR
+      </li>
+      <li class="">
+        Mature and robust library
+      </li>
+      <li class="">
+        Work with FHIR resources using Java Clases
+      </li>
+        </ul>
+		<img src="./assets/imgs/Duke_libs.png" style="float: right; width: 15%;" />
+    </div>
+</section>
+
+
+
+      </section>
+
+      <!-- Diapositivas Verticales: Información del navegador -->
+
+
+<!-- Vertical Slides: Browser Information -->
+<section>
+    <section>
+      <h2>Miscellaneous and Other tools</h2>
+        <div style="font-size: 0.8em;">
+            <p>Tools and utilities that might help</p>
+        </div>
+    </section>
+<section >
+    <h3>Quick API testers</h3>
+    <div style="font-size: 0.8em;">
+
+        <ul >
+      <li class="">
+        <a href="https://www.postman.com/downloads/" target="_blank">
+        Postman:
+        </a> Most famous app
+      </li>
+      <li class="">
+        <a href="https://hoppscotch.io/" target="_blank">
+        Hoppscotch:
+        </a> Same as Postman but Open source
+      </li>
+      <li class="">
+        <a href="https://github.com/Huachao/vscode-restclient" target="_blank">
+        Rest client:
+        </a> Use it inside VS Code
+      </li>
+     <li class="">
+        <a href="https://github.com/karatelabs/karate" target="_blank">
+        Karate API Tester:
+        </a> Use it with Java and JUnit
+      </li>
+        </ul>
+		<img src="./assets/imgs/DukeTools.png" style="float: right; width: 25%;" />
+    </div>
+</section>
+<section >
+    <h3>Quick Hapi Servers</h3>
+    <div style="font-size: 0.8em;">
+
+        <ul >
+      <li class="">
+        <a href="https://github.com/hapifhir/hapi-fhir-jpaserver-starter" target="_blank">
+        HAPI FHIR JPA Server, Starter project:
+        </a> Easy to manage and deploy locally
+      </li>
+      <li class="">
+        <a href="https://hub.docker.com/r/hapiproject/hapi" target="_blank">
+        Dockerized Hapi Server:
+        </a> Same as before but inside docker container
+      </li>
+        </ul>
+		<img src="./assets/imgs/duke_docker.png" style="float: right; width: 25%;" />
+    </div>
+</section>
+<section >
+    <h3>Database Clients</h3>
+    <div style="font-size: 0.8em;">
+
+        <ul >
+      <li class="">
+        <a href="http://www.squirrelsql.org/" target="_blank">
+            SquirrelSQL
+        </a> Most used client by the team members
+      </li>
+        </ul>
+		<img src="./assets/imgs/duke-african-elephant-2.png" style="float: right; width: 25%;" />
+    </div>
+</section>
+
+
+</section>
+
+    </section>
+
+
+
+
+
+			<section data-background="https://media.giphy.com/media/7LO7q5KcXawaQ/giphy.gif">
+				<h2>Fin!</h2>
+      </section>
+ <section>
+  <p>
+<img src="./assets/imgs/hospital-la-fe.png" style="width: 25%"  alt="logo lafe">
+  </p>
+  <h3>Members of the IT Team</h3>
+  <small>
+  <ul>
+  <p>
+  Marisa,
+  Antonio,
+  Vicente,
+  Jose,
+  Celia,
+  Paco,
+  Lucas
+  </p>
+  </ul>
+  </small>
+</section>
+</section>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<script src="reveal/dist/reveal.js"></script>
+		<script src="reveal/plugin/notes/notes.js"></script>
+		<script src="reveal/plugin/markdown/markdown.js"></script>
+		<script src="reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
